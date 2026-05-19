@@ -4,14 +4,14 @@ from discord import app_commands
 import aiosqlite
 import json
 import io
-import os  # تم إبقاء واحدة وحذف المكررة
+import os
 import logging
 import asyncio
 from datetime import datetime, timedelta
 
-# --- المكتبة الجديدة التي يجب إضافتها هنا ---
+
 from dotenv import load_dotenv
-load_dotenv()  # تفعيل قراءة ملف الـ .env فور تشغيل البوت
+load_dotenv() 
 
 # ==========================================
 # إعداد نظام اللوغ
@@ -27,7 +27,6 @@ logger = logging.getLogger("CookiesBot")
 # توكن البوت
 # ==========================================
 
-# قراءة التوكن بشكل آمن وتخزينه في المتغير
 TOKEN = os.getenv("DISCORD_TOKEN")
 # ==========================================
 # الكلاس الرئيسي للبوت

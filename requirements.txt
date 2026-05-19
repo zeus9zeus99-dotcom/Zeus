@@ -1,4 +1,3 @@
-aiohttp
-aiofiles
-beautifulsoup4
-lxml
+discord.py
+aiosqlite
+python-dotenv
